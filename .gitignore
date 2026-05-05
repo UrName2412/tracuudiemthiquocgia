@@ -48,7 +48,11 @@ Generated\ Files/
 # NUnit
 *.VisualState.xml
 TestResult.xml
-nunit-*.xml
+
+# Configuration files with sensitive data
+appsettings.json
+appsettings.*.json
+*.local.json
 
 # Build Results of an ATL Project
 [Dd]ebugPS/

@@ -9,7 +9,7 @@ namespace TraCuuDiemThiQuocGia.ViewModels;
 public class MainViewModel : INotifyPropertyChanged
 {
     private string _soBaoDanh = string.Empty;
-    private ThiSinh _thiSinh = null;
+    private ThiSinh? _thiSinh;
     private bool _isLoading = false;
     private string _errorMessage = string.Empty;
     private bool _hasError = false;
@@ -20,7 +20,7 @@ public class MainViewModel : INotifyPropertyChanged
         set { _soBaoDanh = value; OnPropertyChanged(); }
     }
 
-    public ThiSinh ThiSinh
+    public ThiSinh? ThiSinh
     {
         get => _thiSinh;
         set
@@ -101,7 +101,7 @@ public class MainViewModel : INotifyPropertyChanged
         ErrorMessage = string.Empty;
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-    protected void OnPropertyChanged([CallerMemberName] string name = null)
+    public event PropertyChangedEventHandler? PropertyChanged;
+    protected void OnPropertyChanged([CallerMemberName] string? name = null)
         => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 }

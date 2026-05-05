@@ -69,7 +69,6 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
-		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.6" />
 	</ItemGroup>
 
 </Project>
