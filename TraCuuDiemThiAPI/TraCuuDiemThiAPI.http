@@ -1,6 +1,0 @@
-@TraCuuDiemThiAPI_HostAddress = http://localhost:5272
-
-GET {{TraCuuDiemThiAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
