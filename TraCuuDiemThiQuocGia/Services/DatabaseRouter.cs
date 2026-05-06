@@ -103,7 +103,7 @@ public class DatabaseRouter
             if (sbd >= 501 && sbd <= 1000)
                 return await TraCuuTuSupabaseAsync(_supabaseMienNamUrl, _supabaseMienNamKey, sbd, "Miền Nam");
 
-            return (null, "SBD phải từ 1 đến 1000.");
+            return (null, "Số báo danh phải từ 1 đến 1000.");
         }
         catch (TaskCanceledException)
         {
@@ -140,7 +140,7 @@ public class DatabaseRouter
         if (!response.IsSuccessStatusCode)
         {
             return response.StatusCode == System.Net.HttpStatusCode.NotFound
-                ? (null, $"Không tìm thấy SBD {sbd} trong dữ liệu {khuVuc}.")
+                ? (null, $"Không tìm thấy số báo danh {sbd}.")
                 : (null, $"Khu vực đang bảo trì.");
         }
 
